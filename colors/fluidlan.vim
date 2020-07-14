@@ -65,15 +65,6 @@ let s:color256 = {
       \ 250 : '#bcbcbc', 251 : '#c6c6c6', 252 : '#d0d0d0', 253 : '#dadada', 254 : '#e4e4e4', 255 : '#eeeeee',
       \ }
 
-" ========|===========
-" Red     | 160 168
-" Blue    | 67  68  111
-" Yellow  | 114 179
-" Orange  | 173 178
-" Purple  | 140
-" Magenta | 128
-" ========|===========
-
 let s:colors = {
       \ 16: '#292b2e', 24: '#3C8380', 28: '#c269fe', 30: '#2aa1ae', 36: '#20af81', 40: '#00ff00',
       \ 59: '#FF73B9', 68: '#4f97d7', 75: '#FF62B0', 76: '#86dc2f', 81: '#f9bb00', 88: '#330033',
@@ -94,7 +85,7 @@ function! s:hi(item, fg, bg, cterm, gui)
 endfunction
 
 let s:fg = 249
-let s:bg = get(g:, 'space_vim_dark_background', 235)
+let s:bg = get(g:, 'space_vim_dark_background', 234)
 let s:bg = max([s:bg, 233])
 
 let s:bias = s:bg - 235
@@ -135,7 +126,7 @@ call s:hi('Number'      , 176 , '' , 'None' , 'None')
 call s:hi('Float'       , 135 , '' , 'None' , 'None')
 call s:hi('String'      , 36  , '' , 'None' , 'None')
 call s:hi('Conditional' , 68  , '' , 'bold' , 'bold')
-call s:hi('Constant'    , 163 , '' , 'None' , 'None')
+call s:hi('Constant'    , 105 , '' , 'None' , 'None')
 call s:hi('Debug'       , 225 , '' , 'None' , 'None')
 call s:hi('Define'      , 177 , '' , 'None' , 'None')
 call s:hi('Delimiter'   , 151 , '' , 'None' , 'None')
@@ -148,7 +139,7 @@ call s:hi('Delimiter'   , 151 , '' , 'None' , 'None')
 
 call s:hi('Exception'  , 204 , ''  , 'bold' , 'bold')
 call s:hi('Function'   , 169 , ''  , 'bold' , 'bold')
-call s:hi('Identifier' , 163 , ''  , 'None' , 'None')
+call s:hi('Identifier' , 35 , ''  , 'None' , 'None')
 call s:hi('Ignore'     , 244 , ''  , 'None' , 'None')
 call s:hi('Operator'   , 111 , ''  , 'None' , 'None')
 call s:hi('FoldColumn' , 67  , s:bg1 , 'None' , 'None')
@@ -171,9 +162,9 @@ call s:hi('Type'       , 68 , '' , 'None'      , 'None')
 call s:hi('Typedef'    , 68 , '' , 'None'      , 'None')
 call s:hi('Underlined' , ''  , '' , 'underline' , 'underline')
 
-call s:hi('Search'    , 16 , 76    , 'bold' , 'bold')
-call s:hi('IncSearch' , 16 , 167   , 'bold' , 'bold')
-call s:hi('MatchParen', 40 , s:bg0 , 'bold,underline', 'bold,underline')
+call s:hi('Search'    , 16 , 32   , 'bold' , 'bold')
+call s:hi('IncSearch' , 254 , 32 , 'bold' , 'bold')
+call s:hi('MatchParen', 254 , s:bg0 , 'bold,underline', 'bold,underline')
 
 call s:hi('ModeMsg'  , 229 , '' , 'None' , 'None')
 
@@ -250,7 +241,7 @@ call s:hi('cppSTLnamespace', 178, '', 'bold', 'bold')
 
 " css
 call s:hi('cssTagName' , 68  , '' , 'bold' , 'bold')
-call s:hi('cssProp'    , 169 , '' , 'bold' , 'bold')
+call s:hi('cssProp'    , 250 , '' , 'none' , 'none')
 
 " dot
 call s:hi('dotKeyChar' , 176 , '' , 'none' , 'none')
