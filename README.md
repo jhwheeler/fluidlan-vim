@@ -16,7 +16,7 @@ Plug 'jhwheeler/fluidlan-vim'
 ## GUI or Terminal with true colors enabled
 
 ```vim
-color space-vim-dark
+color fluidlan
 set termguicolors
 hi Normal     ctermbg=NONE guibg=NONE
 hi LineNr     ctermbg=NONE guibg=NONE
