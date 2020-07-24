@@ -1,7 +1,7 @@
 " Vim color file
 "
 " Author: Jackson Holiday Wheeler
-" URL: https://github.com/jhwheeler/fluidlan
+" URL: https://github.com/jhwheeler/fluidlan-vim
 "
 " Note: Inspired by spacemacs-dark theme
 
@@ -166,7 +166,7 @@ call s:hi('Search'    , 16 , 32   , 'bold' , 'bold')
 call s:hi('IncSearch' , 254 , 32 , 'bold' , 'bold')
 call s:hi('MatchParen', 254 , s:bg0 , 'bold,underline', 'bold,underline')
 
-call s:hi('ModeMsg'  , 229 , '' , 'None' , 'None')
+call s:hi('ModeMsg'  , 30 , '' , 'None' , 'None')
 
 " Popup menu
 call s:hi('Pmenu'      , 141 , s:bg1 , 'None' , 'None')
@@ -181,8 +181,8 @@ call s:hi('Todo'       , 172 , s:bg , 'bold' , 'bold')
 " VertSplit consistent with normal background to hide it
 call s:hi('VertSplit' , s:bg0 , '' , 'None' , 'None')
 
-call s:hi('Warning'    , 136 , '' , 'bold' , 'bold')
-call s:hi('WarningMsg' , 136 , '' , 'bold' , 'bold')
+call s:hi('Warning'    , 138 , '' , 'bold' , 'bold')
+call s:hi('WarningMsg' , 138 , '' , 'bold' , 'bold')
 
 call s:hi('Error'    , 160 , s:bg , 'bold' , 'bold')
 call s:hi('ErrorMsg' , 196 , s:bg , 'bold' , 'bold')
